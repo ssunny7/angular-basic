@@ -1,0 +1,2 @@
+# angular-basic
+This is a really simple web-app for me to learn the basics of AngularJS. The app is almost entirely identical to Raoni Boaventura's tutorial here - https://www.toptal.com/angular-js/a-step-by-step-guide-to-your-first-angularjs-app. There are several modification to get things to work on my machine. Big thanks to Raoni for putting together a succinct yet easy-to-understand tutorial, I highly recommend it for Angular beginners!
