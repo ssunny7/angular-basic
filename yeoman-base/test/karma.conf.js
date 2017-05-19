@@ -34,8 +34,10 @@ module.exports = function(config) {
       'bower_components/shim/all.js',
       'bower_components/json3/lib/json3.js',
       // endbower
-      'app/scripts/**/*.js',
-      'test/mock/**/*.js',
+      'app/scripts/app.js',
+      'app/scripts/services.js',
+      'app/scripts/controllers/drivers.js',
+      'app/scripts/controllers/driver.js',
       'test/spec/**/*.js'
     ],
 
@@ -55,12 +57,12 @@ module.exports = function(config) {
     // - PhantomJS
     // - IE (only Windows)
     browsers: [
-      'PhantomJS'
+      'Chrome'
     ],
 
     // Which plugins to enable
     plugins: [
-      'karma-phantomjs-launcher',
+      'karma-chrome-launcher',
       'karma-jasmine'
     ],
 
@@ -72,7 +74,7 @@ module.exports = function(config) {
 
     // level of logging
     // possible values: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG
-    logLevel: config.LOG_INFO,
+    logLevel: config.LOG_DEBUG,
 
     // Uncomment the following lines if you are using grunt's server to run the tests
     // proxies: {

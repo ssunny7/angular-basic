@@ -9,7 +9,7 @@ controller('driversController', function($scope, apiService) {
     return !$scope.nameFilter || re.test(driver.Driver.givenName) || re.test(driver.Driver.familyName);
   };
 
-  apiService.getDrivers().success(function (response) {
+  apiService.getDrivers().then(function onSuccess(response) {
     //Digging into the response to get the relevant data
     $scope.driversList = response.MRData.StandingsTable.StandingsLists[0].DriverStandings;
   });
